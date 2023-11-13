@@ -1,0 +1,62 @@
+<html>
+<body>
+<div style="text-align:center"> 
+ <button id = "btnPlayPause" 
+onclick="playPause()">Play</button> 
+ <button onclick="makeBig()">Big</button>
+ <button onclick="makeSmall()">Small</button>
+ <button onclick="makeNormal()">Normal</button>
+ <button id = "btnMuteUnmute" 
+onclick="mute()">Mute</button>
+ <br><br>
+
+<p>SHIPS IN STORM COMPILATION -MONSTER WAVES</p>
+<video id = "SHIPS" width = "600" height = "400"
+ src = "SHIPS.mp4" controls>
+</video>
+
+<p>The sound of the sea</p>
+<audio id="audio" src="audio.mp3" controls>
+
+<script> 
+var myVideo = document.getElementById("SHIPS"); 
+var btnPlay = 
+document.getElementById("btnPlayPause");
+var btnMute = 
+document.getElementById("btnMuteUnmute");
+function playPause() { 
+ if (myVideo.paused) {
+ myVideo.play();
+btnPlay.innerHTML = "Pause";
+ } 
+ else {
+ myVideo.pause();
+btnPlay.innerHTML = "Play";
+ }
+}
+function makeBig() { 
+ myVideo.width = 600;
+ myVideo.height = 450; 
+} 
+function makeSmall() { 
+ myVideo.width = 300; 
+ myVideo.height = 225; 
+} 
+function makeNormal() { 
+ myVideo.width = 400; 
+ myVideo.height = 300; 
+}
+function mute() { 
+ myVideo.muted = !myVideo.muted;
+if (myVideo.muted)
+btnMute.innerHTML = "Unmute";
+else
+btnMute.innerHTML = "Mute";
+} 
+</script>
+
+</audio>
+</div>
+</video>
+</body>
+</html>

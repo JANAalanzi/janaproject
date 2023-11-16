@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8>
-        <title>Flappy Bird branch_3</title>
+        <title>Flappy Bird branch_3_tast</title>
         <link rel=stylesheet" href="../res/style.css">
         <script src="../src/script.js"></script>
     </head>
